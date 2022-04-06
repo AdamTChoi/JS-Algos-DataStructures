@@ -1,0 +1,15 @@
+function palindrome(str) {
+  let newStr = str.toLowerCase().replace(/[\W_]/g, ''); //Change to lower case and remove nonalphanumeric characters including "_".
+  let reverseStr = newStr.split("").reverse().join(""); //Make new reverseStr - split array, reverse array, then join together to form new string
+  for(var i = 0; i < newStr.length - 1; i++) { //Iterate through each character and if not equal = false
+      if (newStr[i] !== reverseStr[i]) {
+          return false;
+      }
+  }
+  return true;
+}
+
+console.log(palindrome("eye"));
+
+
+
