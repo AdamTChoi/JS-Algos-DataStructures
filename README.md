@@ -1,2 +1,2 @@
-- freeCodeCamp JS Algos/DataStructures
+# freeCodeCamp JS Algos/DataStructures
  
